@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EducationPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EducationPopup.Designer.cs">
+      <DependentUpon>EducationPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExperiencePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExperiencePopup.Designer.cs">
+      <DependentUpon>ExperiencePopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EducationPopup.resx">
+      <DependentUpon>EducationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExperiencePopup.resx">
+      <DependentUpon>ExperiencePopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
