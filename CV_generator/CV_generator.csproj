@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalInfoPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionalInfoPopup.Designer.cs">
+      <DependentUpon>AdditionalInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursesPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursesPopup.Designer.cs">
+      <DependentUpon>CoursesPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="EducationPopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +76,38 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterestsPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterestsPopup.Designer.cs">
+      <DependentUpon>InterestsPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanguagesPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanguagesPopup.Designer.cs">
+      <DependentUpon>LanguagesPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectsPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectsPopup.Designer.cs">
+      <DependentUpon>ProjectsPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkillsPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkillsPopup.Designer.cs">
+      <DependentUpon>SkillsPopup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdditionalInfoPopup.resx">
+      <DependentUpon>AdditionalInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursesPopup.resx">
+      <DependentUpon>CoursesPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EducationPopup.resx">
       <DependentUpon>EducationPopup.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterestsPopup.resx">
+      <DependentUpon>InterestsPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguagesPopup.resx">
+      <DependentUpon>LanguagesPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectsPopup.resx">
+      <DependentUpon>ProjectsPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SkillsPopup.resx">
+      <DependentUpon>SkillsPopup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

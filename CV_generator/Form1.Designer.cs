@@ -74,25 +74,55 @@ namespace CV_generator
             this.Name_Label = new System.Windows.Forms.Label();
             this.Education_Tab = new System.Windows.Forms.TabPage();
             this.Edu_Data = new System.Windows.Forms.DataGridView();
-            this.EducationAdd_Button = new System.Windows.Forms.Button();
-            this.Experience_Tab = new System.Windows.Forms.TabPage();
-            this.Skills_Tab = new System.Windows.Forms.TabPage();
-            this.Courses_Tab = new System.Windows.Forms.TabPage();
-            this.Projects_Tab = new System.Windows.Forms.TabPage();
-            this.Languages_Tab = new System.Windows.Forms.TabPage();
-            this.Additional_Info_Tab = new System.Windows.Forms.TabPage();
             this.EduFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduSchool = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduDegree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduField = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Exp_Data = new System.Windows.Forms.DataGridView();
+            this.EducationAdd_Button = new System.Windows.Forms.Button();
+            this.Experience_Tab = new System.Windows.Forms.TabPage();
             this.ExperienceAdd_Button = new System.Windows.Forms.Button();
+            this.Exp_Data = new System.Windows.Forms.DataGridView();
             this.ExpFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpCompany = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpAdditional = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Skills_Tab = new System.Windows.Forms.TabPage();
+            this.SkillsAdd_Button = new System.Windows.Forms.Button();
+            this.Skills_Data = new System.Windows.Forms.DataGridView();
+            this.SkillsSkill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillKnowledge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SkillsShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Courses_Tab = new System.Windows.Forms.TabPage();
+            this.CoursesAdd_Button = new System.Windows.Forms.Button();
+            this.Courses_Data = new System.Windows.Forms.DataGridView();
+            this.CoursesFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoursesTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoursesCourse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoursesAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoursesShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Projects_Tab = new System.Windows.Forms.TabPage();
+            this.ProjectsAdd_Button = new System.Windows.Forms.Button();
+            this.Projects_Data = new System.Windows.Forms.DataGridView();
+            this.ProjectsProject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectsAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectsShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Languages_Tab = new System.Windows.Forms.TabPage();
+            this.LanguagesAdd_Button = new System.Windows.Forms.Button();
+            this.Languages_Data = new System.Windows.Forms.DataGridView();
+            this.LanguagesLanguage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LanguagesKnowledge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Additional_Info_Tab = new System.Windows.Forms.TabPage();
+            this.AdditionalInfoAdd_Button = new System.Windows.Forms.Button();
+            this.AdditionalInfo_Data = new System.Windows.Forms.DataGridView();
+            this.AdditionalInfoAdditional = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AdditionalInfoShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InterestsAdd_Button = new System.Windows.Forms.Button();
+            this.Interests_Data = new System.Windows.Forms.DataGridView();
+            this.AdditionalInfoInterests = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AdditionalInfoInterestShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.General_Info_Tab.SuspendLayout();
@@ -100,6 +130,17 @@ namespace CV_generator
             ((System.ComponentModel.ISupportInitialize)(this.Edu_Data)).BeginInit();
             this.Experience_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Exp_Data)).BeginInit();
+            this.Skills_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Skills_Data)).BeginInit();
+            this.Courses_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Courses_Data)).BeginInit();
+            this.Projects_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Projects_Data)).BeginInit();
+            this.Languages_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Languages_Data)).BeginInit();
+            this.Additional_Info_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AdditionalInfo_Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Interests_Data)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -544,82 +585,10 @@ namespace CV_generator
             this.EduSchool,
             this.EduDegree,
             this.EduField});
-            this.Edu_Data.Location = new System.Drawing.Point(6, 57);
+            this.Edu_Data.Location = new System.Drawing.Point(6, 60);
             this.Edu_Data.Name = "Edu_Data";
             this.Edu_Data.Size = new System.Drawing.Size(965, 561);
             this.Edu_Data.TabIndex = 2;
-            // 
-            // EducationAdd_Button
-            // 
-            this.EducationAdd_Button.Location = new System.Drawing.Point(6, 28);
-            this.EducationAdd_Button.Name = "EducationAdd_Button";
-            this.EducationAdd_Button.Size = new System.Drawing.Size(75, 23);
-            this.EducationAdd_Button.TabIndex = 1;
-            this.EducationAdd_Button.Text = "Add...";
-            this.EducationAdd_Button.UseVisualStyleBackColor = true;
-            this.EducationAdd_Button.Click += new System.EventHandler(this.EducationAdd_Button_Click);
-            // 
-            // Experience_Tab
-            // 
-            this.Experience_Tab.Controls.Add(this.ExperienceAdd_Button);
-            this.Experience_Tab.Controls.Add(this.Exp_Data);
-            this.Experience_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Experience_Tab.Name = "Experience_Tab";
-            this.Experience_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Experience_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Experience_Tab.TabIndex = 2;
-            this.Experience_Tab.Text = "Experience";
-            this.Experience_Tab.UseVisualStyleBackColor = true;
-            // 
-            // Skills_Tab
-            // 
-            this.Skills_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Skills_Tab.Name = "Skills_Tab";
-            this.Skills_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Skills_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Skills_Tab.TabIndex = 3;
-            this.Skills_Tab.Text = "Skills";
-            this.Skills_Tab.UseVisualStyleBackColor = true;
-            // 
-            // Courses_Tab
-            // 
-            this.Courses_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Courses_Tab.Name = "Courses_Tab";
-            this.Courses_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Courses_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Courses_Tab.TabIndex = 4;
-            this.Courses_Tab.Text = "Courses";
-            this.Courses_Tab.UseVisualStyleBackColor = true;
-            // 
-            // Projects_Tab
-            // 
-            this.Projects_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Projects_Tab.Name = "Projects_Tab";
-            this.Projects_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Projects_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Projects_Tab.TabIndex = 5;
-            this.Projects_Tab.Text = "Projects";
-            this.Projects_Tab.UseVisualStyleBackColor = true;
-            // 
-            // Languages_Tab
-            // 
-            this.Languages_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Languages_Tab.Name = "Languages_Tab";
-            this.Languages_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Languages_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Languages_Tab.TabIndex = 6;
-            this.Languages_Tab.Text = "Languages";
-            this.Languages_Tab.UseVisualStyleBackColor = true;
-            // 
-            // Additional_Info_Tab
-            // 
-            this.Additional_Info_Tab.Location = new System.Drawing.Point(4, 22);
-            this.Additional_Info_Tab.Name = "Additional_Info_Tab";
-            this.Additional_Info_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Additional_Info_Tab.Size = new System.Drawing.Size(977, 624);
-            this.Additional_Info_Tab.TabIndex = 7;
-            this.Additional_Info_Tab.Text = "Additional Info";
-            this.Additional_Info_Tab.UseVisualStyleBackColor = true;
             // 
             // EduFrom
             // 
@@ -651,6 +620,38 @@ namespace CV_generator
             this.EduField.Name = "EduField";
             this.EduField.Width = 94;
             // 
+            // EducationAdd_Button
+            // 
+            this.EducationAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.EducationAdd_Button.Name = "EducationAdd_Button";
+            this.EducationAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.EducationAdd_Button.TabIndex = 1;
+            this.EducationAdd_Button.Text = "Add...";
+            this.EducationAdd_Button.UseVisualStyleBackColor = true;
+            this.EducationAdd_Button.Click += new System.EventHandler(this.EducationAdd_Button_Click);
+            // 
+            // Experience_Tab
+            // 
+            this.Experience_Tab.Controls.Add(this.ExperienceAdd_Button);
+            this.Experience_Tab.Controls.Add(this.Exp_Data);
+            this.Experience_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Experience_Tab.Name = "Experience_Tab";
+            this.Experience_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Experience_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Experience_Tab.TabIndex = 2;
+            this.Experience_Tab.Text = "Experience";
+            this.Experience_Tab.UseVisualStyleBackColor = true;
+            // 
+            // ExperienceAdd_Button
+            // 
+            this.ExperienceAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.ExperienceAdd_Button.Name = "ExperienceAdd_Button";
+            this.ExperienceAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.ExperienceAdd_Button.TabIndex = 4;
+            this.ExperienceAdd_Button.Text = "Add...";
+            this.ExperienceAdd_Button.UseVisualStyleBackColor = true;
+            this.ExperienceAdd_Button.Click += new System.EventHandler(this.ExperienceAdd_Button_Click);
+            // 
             // Exp_Data
             // 
             this.Exp_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -663,20 +664,10 @@ namespace CV_generator
             this.ExpCompany,
             this.ExpPosition,
             this.ExpAdditional});
-            this.Exp_Data.Location = new System.Drawing.Point(6, 57);
+            this.Exp_Data.Location = new System.Drawing.Point(6, 60);
             this.Exp_Data.Name = "Exp_Data";
             this.Exp_Data.Size = new System.Drawing.Size(965, 561);
             this.Exp_Data.TabIndex = 3;
-            // 
-            // ExperienceAdd_Button
-            // 
-            this.ExperienceAdd_Button.Location = new System.Drawing.Point(6, 28);
-            this.ExperienceAdd_Button.Name = "ExperienceAdd_Button";
-            this.ExperienceAdd_Button.Size = new System.Drawing.Size(75, 23);
-            this.ExperienceAdd_Button.TabIndex = 4;
-            this.ExperienceAdd_Button.Text = "Add...";
-            this.ExperienceAdd_Button.UseVisualStyleBackColor = true;
-            this.ExperienceAdd_Button.Click += new System.EventHandler(this.ExperienceAdd_Button_Click);
             // 
             // ExpFrom
             // 
@@ -708,6 +699,326 @@ namespace CV_generator
             this.ExpAdditional.Name = "ExpAdditional";
             this.ExpAdditional.Width = 99;
             // 
+            // Skills_Tab
+            // 
+            this.Skills_Tab.Controls.Add(this.SkillsAdd_Button);
+            this.Skills_Tab.Controls.Add(this.Skills_Data);
+            this.Skills_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Skills_Tab.Name = "Skills_Tab";
+            this.Skills_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Skills_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Skills_Tab.TabIndex = 3;
+            this.Skills_Tab.Text = "Skills";
+            this.Skills_Tab.UseVisualStyleBackColor = true;
+            // 
+            // SkillsAdd_Button
+            // 
+            this.SkillsAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.SkillsAdd_Button.Name = "SkillsAdd_Button";
+            this.SkillsAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.SkillsAdd_Button.TabIndex = 6;
+            this.SkillsAdd_Button.Text = "Add...";
+            this.SkillsAdd_Button.UseVisualStyleBackColor = true;
+            this.SkillsAdd_Button.Click += new System.EventHandler(this.SkillsAdd_Button_Click);
+            // 
+            // Skills_Data
+            // 
+            this.Skills_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Skills_Data.BackgroundColor = System.Drawing.Color.White;
+            this.Skills_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Skills_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Skills_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SkillsSkill,
+            this.SkillKnowledge,
+            this.SkillAdditionalInfo,
+            this.SkillsShow});
+            this.Skills_Data.Location = new System.Drawing.Point(6, 60);
+            this.Skills_Data.Name = "Skills_Data";
+            this.Skills_Data.Size = new System.Drawing.Size(965, 561);
+            this.Skills_Data.TabIndex = 5;
+            // 
+            // SkillsSkill
+            // 
+            this.SkillsSkill.HeaderText = "Skill";
+            this.SkillsSkill.Name = "SkillsSkill";
+            this.SkillsSkill.Width = 51;
+            // 
+            // SkillKnowledge
+            // 
+            this.SkillKnowledge.HeaderText = "Knowledge";
+            this.SkillKnowledge.Name = "SkillKnowledge";
+            this.SkillKnowledge.Width = 85;
+            // 
+            // SkillAdditionalInfo
+            // 
+            this.SkillAdditionalInfo.HeaderText = "Additional Info";
+            this.SkillAdditionalInfo.Name = "SkillAdditionalInfo";
+            this.SkillAdditionalInfo.Width = 99;
+            // 
+            // SkillsShow
+            // 
+            this.SkillsShow.HeaderText = "Show";
+            this.SkillsShow.Name = "SkillsShow";
+            this.SkillsShow.Width = 59;
+            // 
+            // Courses_Tab
+            // 
+            this.Courses_Tab.Controls.Add(this.CoursesAdd_Button);
+            this.Courses_Tab.Controls.Add(this.Courses_Data);
+            this.Courses_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Courses_Tab.Name = "Courses_Tab";
+            this.Courses_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Courses_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Courses_Tab.TabIndex = 4;
+            this.Courses_Tab.Text = "Courses";
+            this.Courses_Tab.UseVisualStyleBackColor = true;
+            // 
+            // CoursesAdd_Button
+            // 
+            this.CoursesAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.CoursesAdd_Button.Name = "CoursesAdd_Button";
+            this.CoursesAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.CoursesAdd_Button.TabIndex = 6;
+            this.CoursesAdd_Button.Text = "Add...";
+            this.CoursesAdd_Button.UseVisualStyleBackColor = true;
+            this.CoursesAdd_Button.Click += new System.EventHandler(this.CoursesAdd_Button_Click);
+            // 
+            // Courses_Data
+            // 
+            this.Courses_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Courses_Data.BackgroundColor = System.Drawing.Color.White;
+            this.Courses_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Courses_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Courses_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CoursesFrom,
+            this.CoursesTo,
+            this.CoursesCourse,
+            this.CoursesAdditionalInfo,
+            this.CoursesShow});
+            this.Courses_Data.Location = new System.Drawing.Point(6, 60);
+            this.Courses_Data.Name = "Courses_Data";
+            this.Courses_Data.Size = new System.Drawing.Size(965, 561);
+            this.Courses_Data.TabIndex = 5;
+            // 
+            // CoursesFrom
+            // 
+            this.CoursesFrom.HeaderText = "From";
+            this.CoursesFrom.Name = "CoursesFrom";
+            this.CoursesFrom.Width = 55;
+            // 
+            // CoursesTo
+            // 
+            this.CoursesTo.HeaderText = "To";
+            this.CoursesTo.Name = "CoursesTo";
+            this.CoursesTo.Width = 45;
+            // 
+            // CoursesCourse
+            // 
+            this.CoursesCourse.HeaderText = "Course";
+            this.CoursesCourse.Name = "CoursesCourse";
+            this.CoursesCourse.Width = 65;
+            // 
+            // CoursesAdditionalInfo
+            // 
+            this.CoursesAdditionalInfo.HeaderText = "Additional Info";
+            this.CoursesAdditionalInfo.Name = "CoursesAdditionalInfo";
+            this.CoursesAdditionalInfo.Width = 99;
+            // 
+            // CoursesShow
+            // 
+            this.CoursesShow.HeaderText = "Show";
+            this.CoursesShow.Name = "CoursesShow";
+            this.CoursesShow.Width = 59;
+            // 
+            // Projects_Tab
+            // 
+            this.Projects_Tab.Controls.Add(this.ProjectsAdd_Button);
+            this.Projects_Tab.Controls.Add(this.Projects_Data);
+            this.Projects_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Projects_Tab.Name = "Projects_Tab";
+            this.Projects_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Projects_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Projects_Tab.TabIndex = 5;
+            this.Projects_Tab.Text = "Projects";
+            this.Projects_Tab.UseVisualStyleBackColor = true;
+            // 
+            // ProjectsAdd_Button
+            // 
+            this.ProjectsAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.ProjectsAdd_Button.Name = "ProjectsAdd_Button";
+            this.ProjectsAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.ProjectsAdd_Button.TabIndex = 6;
+            this.ProjectsAdd_Button.Text = "Add...";
+            this.ProjectsAdd_Button.UseVisualStyleBackColor = true;
+            this.ProjectsAdd_Button.Click += new System.EventHandler(this.ProjectsAdd_Button_Click);
+            // 
+            // Projects_Data
+            // 
+            this.Projects_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Projects_Data.BackgroundColor = System.Drawing.Color.White;
+            this.Projects_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Projects_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Projects_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProjectsProject,
+            this.ProjectsAdditionalInfo,
+            this.ProjectsShow});
+            this.Projects_Data.Location = new System.Drawing.Point(6, 60);
+            this.Projects_Data.Name = "Projects_Data";
+            this.Projects_Data.Size = new System.Drawing.Size(965, 561);
+            this.Projects_Data.TabIndex = 5;
+            // 
+            // ProjectsProject
+            // 
+            this.ProjectsProject.HeaderText = "Project";
+            this.ProjectsProject.Name = "ProjectsProject";
+            this.ProjectsProject.Width = 65;
+            // 
+            // ProjectsAdditionalInfo
+            // 
+            this.ProjectsAdditionalInfo.HeaderText = "Additional Info";
+            this.ProjectsAdditionalInfo.Name = "ProjectsAdditionalInfo";
+            this.ProjectsAdditionalInfo.Width = 99;
+            // 
+            // ProjectsShow
+            // 
+            this.ProjectsShow.HeaderText = "Show";
+            this.ProjectsShow.Name = "ProjectsShow";
+            this.ProjectsShow.Width = 59;
+            // 
+            // Languages_Tab
+            // 
+            this.Languages_Tab.Controls.Add(this.LanguagesAdd_Button);
+            this.Languages_Tab.Controls.Add(this.Languages_Data);
+            this.Languages_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Languages_Tab.Name = "Languages_Tab";
+            this.Languages_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Languages_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Languages_Tab.TabIndex = 6;
+            this.Languages_Tab.Text = "Languages";
+            this.Languages_Tab.UseVisualStyleBackColor = true;
+            // 
+            // LanguagesAdd_Button
+            // 
+            this.LanguagesAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.LanguagesAdd_Button.Name = "LanguagesAdd_Button";
+            this.LanguagesAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.LanguagesAdd_Button.TabIndex = 6;
+            this.LanguagesAdd_Button.Text = "Add...";
+            this.LanguagesAdd_Button.UseVisualStyleBackColor = true;
+            this.LanguagesAdd_Button.Click += new System.EventHandler(this.LanguagesAdd_Button_Click);
+            // 
+            // Languages_Data
+            // 
+            this.Languages_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Languages_Data.BackgroundColor = System.Drawing.Color.White;
+            this.Languages_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Languages_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Languages_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.LanguagesLanguage,
+            this.LanguagesKnowledge});
+            this.Languages_Data.Location = new System.Drawing.Point(6, 60);
+            this.Languages_Data.Name = "Languages_Data";
+            this.Languages_Data.Size = new System.Drawing.Size(965, 561);
+            this.Languages_Data.TabIndex = 5;
+            // 
+            // LanguagesLanguage
+            // 
+            this.LanguagesLanguage.HeaderText = "Language";
+            this.LanguagesLanguage.Name = "LanguagesLanguage";
+            this.LanguagesLanguage.Width = 80;
+            // 
+            // LanguagesKnowledge
+            // 
+            this.LanguagesKnowledge.HeaderText = "Knowledge";
+            this.LanguagesKnowledge.Name = "LanguagesKnowledge";
+            this.LanguagesKnowledge.Width = 85;
+            // 
+            // Additional_Info_Tab
+            // 
+            this.Additional_Info_Tab.Controls.Add(this.AdditionalInfoAdd_Button);
+            this.Additional_Info_Tab.Controls.Add(this.AdditionalInfo_Data);
+            this.Additional_Info_Tab.Controls.Add(this.InterestsAdd_Button);
+            this.Additional_Info_Tab.Controls.Add(this.Interests_Data);
+            this.Additional_Info_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Additional_Info_Tab.Name = "Additional_Info_Tab";
+            this.Additional_Info_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Additional_Info_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Additional_Info_Tab.TabIndex = 7;
+            this.Additional_Info_Tab.Text = "Additional Info";
+            this.Additional_Info_Tab.UseVisualStyleBackColor = true;
+            // 
+            // AdditionalInfoAdd_Button
+            // 
+            this.AdditionalInfoAdd_Button.Location = new System.Drawing.Point(492, 31);
+            this.AdditionalInfoAdd_Button.Name = "AdditionalInfoAdd_Button";
+            this.AdditionalInfoAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.AdditionalInfoAdd_Button.TabIndex = 10;
+            this.AdditionalInfoAdd_Button.Text = "Add...";
+            this.AdditionalInfoAdd_Button.UseVisualStyleBackColor = true;
+            this.AdditionalInfoAdd_Button.Click += new System.EventHandler(this.AdditionalInfoAdd_Button_Click);
+            // 
+            // AdditionalInfo_Data
+            // 
+            this.AdditionalInfo_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.AdditionalInfo_Data.BackgroundColor = System.Drawing.Color.White;
+            this.AdditionalInfo_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdditionalInfo_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AdditionalInfo_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AdditionalInfoAdditional,
+            this.AdditionalInfoShow});
+            this.AdditionalInfo_Data.Location = new System.Drawing.Point(492, 57);
+            this.AdditionalInfo_Data.Name = "AdditionalInfo_Data";
+            this.AdditionalInfo_Data.Size = new System.Drawing.Size(485, 561);
+            this.AdditionalInfo_Data.TabIndex = 9;
+            // 
+            // AdditionalInfoAdditional
+            // 
+            this.AdditionalInfoAdditional.HeaderText = "Additional Info";
+            this.AdditionalInfoAdditional.Name = "AdditionalInfoAdditional";
+            this.AdditionalInfoAdditional.Width = 99;
+            // 
+            // AdditionalInfoShow
+            // 
+            this.AdditionalInfoShow.HeaderText = "Show";
+            this.AdditionalInfoShow.Name = "AdditionalInfoShow";
+            this.AdditionalInfoShow.Width = 59;
+            // 
+            // InterestsAdd_Button
+            // 
+            this.InterestsAdd_Button.Location = new System.Drawing.Point(6, 31);
+            this.InterestsAdd_Button.Name = "InterestsAdd_Button";
+            this.InterestsAdd_Button.Size = new System.Drawing.Size(75, 23);
+            this.InterestsAdd_Button.TabIndex = 8;
+            this.InterestsAdd_Button.Text = "Add...";
+            this.InterestsAdd_Button.UseVisualStyleBackColor = true;
+            this.InterestsAdd_Button.Click += new System.EventHandler(this.InterestsAdd_Button_Click);
+            // 
+            // Interests_Data
+            // 
+            this.Interests_Data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.Interests_Data.BackgroundColor = System.Drawing.Color.White;
+            this.Interests_Data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Interests_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Interests_Data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AdditionalInfoInterests,
+            this.AdditionalInfoInterestShow});
+            this.Interests_Data.Location = new System.Drawing.Point(6, 60);
+            this.Interests_Data.Name = "Interests_Data";
+            this.Interests_Data.Size = new System.Drawing.Size(485, 561);
+            this.Interests_Data.TabIndex = 7;
+            // 
+            // AdditionalInfoInterests
+            // 
+            this.AdditionalInfoInterests.HeaderText = "Interests";
+            this.AdditionalInfoInterests.Name = "AdditionalInfoInterests";
+            this.AdditionalInfoInterests.Width = 72;
+            // 
+            // AdditionalInfoInterestShow
+            // 
+            this.AdditionalInfoInterestShow.HeaderText = "Show";
+            this.AdditionalInfoInterestShow.Name = "AdditionalInfoInterestShow";
+            this.AdditionalInfoInterestShow.Width = 59;
+            // 
             // CV_Generator_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -727,6 +1038,17 @@ namespace CV_generator
             ((System.ComponentModel.ISupportInitialize)(this.Edu_Data)).EndInit();
             this.Experience_Tab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Exp_Data)).EndInit();
+            this.Skills_Tab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Skills_Data)).EndInit();
+            this.Courses_Tab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Courses_Data)).EndInit();
+            this.Projects_Tab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Projects_Data)).EndInit();
+            this.Languages_Tab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Languages_Data)).EndInit();
+            this.Additional_Info_Tab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AdditionalInfo_Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Interests_Data)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -798,6 +1120,36 @@ namespace CV_generator
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpCompany;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpPosition;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpAdditional;
+        private System.Windows.Forms.Button SkillsAdd_Button;
+        private System.Windows.Forms.DataGridView Skills_Data;
+        private System.Windows.Forms.Button CoursesAdd_Button;
+        private System.Windows.Forms.DataGridView Courses_Data;
+        private System.Windows.Forms.Button ProjectsAdd_Button;
+        private System.Windows.Forms.DataGridView Projects_Data;
+        private System.Windows.Forms.Button LanguagesAdd_Button;
+        private System.Windows.Forms.DataGridView Languages_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillsSkill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillKnowledge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillAdditionalInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SkillsShow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CoursesFrom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CoursesTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CoursesCourse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CoursesAdditionalInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CoursesShow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectsProject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectsAdditionalInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectsShow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LanguagesLanguage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LanguagesKnowledge;
+        private System.Windows.Forms.Button InterestsAdd_Button;
+        private System.Windows.Forms.DataGridView Interests_Data;
+        private System.Windows.Forms.Button AdditionalInfoAdd_Button;
+        private System.Windows.Forms.DataGridView AdditionalInfo_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoAdditional;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoShow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterests;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterestShow;
     }
 }
 
