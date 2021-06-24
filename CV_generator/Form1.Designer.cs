@@ -123,6 +123,10 @@ namespace CV_generator
             this.Interests_Data = new System.Windows.Forms.DataGridView();
             this.AdditionalInfoInterests = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AdditionalInfoInterestShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Footer_Tab = new System.Windows.Forms.TabPage();
+            this.Footer_RichBox = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.General_Info_Tab.SuspendLayout();
@@ -141,6 +145,7 @@ namespace CV_generator
             this.Additional_Info_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdditionalInfo_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interests_Data)).BeginInit();
+            this.Footer_Tab.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -168,32 +173,37 @@ namespace CV_generator
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadToolStripMenuItem.Text = "Load...";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click_1);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save As...";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -205,6 +215,7 @@ namespace CV_generator
             this.tabControl1.Controls.Add(this.Projects_Tab);
             this.tabControl1.Controls.Add(this.Languages_Tab);
             this.tabControl1.Controls.Add(this.Additional_Info_Tab);
+            this.tabControl1.Controls.Add(this.Footer_Tab);
             this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1019,6 +1030,29 @@ namespace CV_generator
             this.AdditionalInfoInterestShow.Name = "AdditionalInfoInterestShow";
             this.AdditionalInfoInterestShow.Width = 59;
             // 
+            // Footer_Tab
+            // 
+            this.Footer_Tab.Controls.Add(this.Footer_RichBox);
+            this.Footer_Tab.Location = new System.Drawing.Point(4, 22);
+            this.Footer_Tab.Name = "Footer_Tab";
+            this.Footer_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Footer_Tab.Size = new System.Drawing.Size(977, 624);
+            this.Footer_Tab.TabIndex = 8;
+            this.Footer_Tab.Text = "Footer";
+            this.Footer_Tab.UseVisualStyleBackColor = true;
+            // 
+            // Footer_RichBox
+            // 
+            this.Footer_RichBox.Location = new System.Drawing.Point(6, 42);
+            this.Footer_RichBox.Name = "Footer_RichBox";
+            this.Footer_RichBox.Size = new System.Drawing.Size(965, 576);
+            this.Footer_RichBox.TabIndex = 0;
+            this.Footer_RichBox.Text = "";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // CV_Generator_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1049,6 +1083,7 @@ namespace CV_generator
             this.Additional_Info_Tab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AdditionalInfo_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Interests_Data)).EndInit();
+            this.Footer_Tab.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1150,6 +1185,10 @@ namespace CV_generator
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoShow;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterests;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterestShow;
+        private System.Windows.Forms.TabPage Footer_Tab;
+        private System.Windows.Forms.RichTextBox Footer_RichBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
