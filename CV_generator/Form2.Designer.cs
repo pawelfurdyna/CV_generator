@@ -33,9 +33,10 @@ namespace CV_generator
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cleanCVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.General_Info_Tab = new System.Windows.Forms.TabPage();
             this.Website_Check = new System.Windows.Forms.CheckBox();
@@ -74,61 +75,59 @@ namespace CV_generator
             this.Name_Label = new System.Windows.Forms.Label();
             this.Education_Tab = new System.Windows.Forms.TabPage();
             this.Edu_Data = new System.Windows.Forms.DataGridView();
+            this.EducationAdd_Button = new System.Windows.Forms.Button();
+            this.Experience_Tab = new System.Windows.Forms.TabPage();
+            this.ExperienceAdd_Button = new System.Windows.Forms.Button();
+            this.Exp_Data = new System.Windows.Forms.DataGridView();
+            this.Skills_Tab = new System.Windows.Forms.TabPage();
+            this.SkillsAdd_Button = new System.Windows.Forms.Button();
+            this.Skills_Data = new System.Windows.Forms.DataGridView();
+            this.Courses_Tab = new System.Windows.Forms.TabPage();
+            this.CoursesAdd_Button = new System.Windows.Forms.Button();
+            this.Courses_Data = new System.Windows.Forms.DataGridView();
+            this.Projects_Tab = new System.Windows.Forms.TabPage();
+            this.ProjectsAdd_Button = new System.Windows.Forms.Button();
+            this.Projects_Data = new System.Windows.Forms.DataGridView();
+            this.Languages_Tab = new System.Windows.Forms.TabPage();
+            this.LanguagesAdd_Button = new System.Windows.Forms.Button();
+            this.Languages_Data = new System.Windows.Forms.DataGridView();
+            this.Additional_Info_Tab = new System.Windows.Forms.TabPage();
+            this.AdditionalInfoAdd_Button = new System.Windows.Forms.Button();
+            this.AdditionalInfo_Data = new System.Windows.Forms.DataGridView();
+            this.InterestsAdd_Button = new System.Windows.Forms.Button();
+            this.Interests_Data = new System.Windows.Forms.DataGridView();
+            this.Footer_Tab = new System.Windows.Forms.TabPage();
+            this.Footer_RichBox = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.EduFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduSchool = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduDegree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EduField = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EducationAdd_Button = new System.Windows.Forms.Button();
-            this.Experience_Tab = new System.Windows.Forms.TabPage();
-            this.ExperienceAdd_Button = new System.Windows.Forms.Button();
-            this.Exp_Data = new System.Windows.Forms.DataGridView();
             this.ExpFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpCompany = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpAdditional = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Skills_Tab = new System.Windows.Forms.TabPage();
-            this.SkillsAdd_Button = new System.Windows.Forms.Button();
-            this.Skills_Data = new System.Windows.Forms.DataGridView();
             this.SkillsSkill = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SkillKnowledge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SkillAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SkillsShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Courses_Tab = new System.Windows.Forms.TabPage();
-            this.CoursesAdd_Button = new System.Windows.Forms.Button();
-            this.Courses_Data = new System.Windows.Forms.DataGridView();
             this.CoursesFrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoursesTo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoursesCourse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoursesAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoursesShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Projects_Tab = new System.Windows.Forms.TabPage();
-            this.ProjectsAdd_Button = new System.Windows.Forms.Button();
-            this.Projects_Data = new System.Windows.Forms.DataGridView();
             this.ProjectsProject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProjectsAdditionalInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProjectsShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Languages_Tab = new System.Windows.Forms.TabPage();
-            this.LanguagesAdd_Button = new System.Windows.Forms.Button();
-            this.Languages_Data = new System.Windows.Forms.DataGridView();
             this.LanguagesLanguage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LanguagesKnowledge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Additional_Info_Tab = new System.Windows.Forms.TabPage();
-            this.AdditionalInfoAdd_Button = new System.Windows.Forms.Button();
-            this.AdditionalInfo_Data = new System.Windows.Forms.DataGridView();
-            this.AdditionalInfoAdditional = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AdditionalInfoShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InterestsAdd_Button = new System.Windows.Forms.Button();
-            this.Interests_Data = new System.Windows.Forms.DataGridView();
             this.AdditionalInfoInterests = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AdditionalInfoInterestShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Footer_Tab = new System.Windows.Forms.TabPage();
-            this.Footer_RichBox = new System.Windows.Forms.RichTextBox();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.generateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cleanCVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdditionalInfoAdditional = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AdditionalInfoShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.General_Info_Tab.SuspendLayout();
@@ -166,47 +165,57 @@ namespace CV_generator
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.loadToolStripMenuItem,
-            this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.fileToolStripMenuItem.Text = "Plik";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.newToolStripMenuItem.Text = "Nowy";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.loadToolStripMenuItem.Text = "Load...";
+            this.loadToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.loadToolStripMenuItem.Text = "Otwórz...";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click_1);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveAsToolStripMenuItem.Text = "Save As...";
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.saveAsToolStripMenuItem.Text = "Zapisz";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.exitToolStripMenuItem.Text = "Zamknij";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // generateToolStripMenuItem
+            // 
+            this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cleanCVToolStripMenuItem});
+            this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
+            this.generateToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.generateToolStripMenuItem.Text = "Generuj";
+            // 
+            // cleanCVToolStripMenuItem
+            // 
+            this.cleanCVToolStripMenuItem.Name = "cleanCVToolStripMenuItem";
+            this.cleanCVToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.cleanCVToolStripMenuItem.Text = "Minimalistyczne CV";
+            this.cleanCVToolStripMenuItem.Click += new System.EventHandler(this.cleanCVToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -266,7 +275,7 @@ namespace CV_generator
             this.General_Info_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.General_Info_Tab.Size = new System.Drawing.Size(977, 624);
             this.General_Info_Tab.TabIndex = 0;
-            this.General_Info_Tab.Text = "General Info";
+            this.General_Info_Tab.Text = "Ogólne";
             this.General_Info_Tab.UseVisualStyleBackColor = true;
             // 
             // Website_Check
@@ -384,9 +393,9 @@ namespace CV_generator
             this.Show_Label.AutoSize = true;
             this.Show_Label.Location = new System.Drawing.Point(266, 29);
             this.Show_Label.Name = "Show_Label";
-            this.Show_Label.Size = new System.Drawing.Size(34, 13);
+            this.Show_Label.Size = new System.Drawing.Size(37, 13);
             this.Show_Label.TabIndex = 23;
-            this.Show_Label.Text = "Show";
+            this.Show_Label.Text = "Pokaż";
             // 
             // Name_Check
             // 
@@ -404,9 +413,9 @@ namespace CV_generator
             this.Website_Label.AutoSize = true;
             this.Website_Label.Location = new System.Drawing.Point(6, 323);
             this.Website_Label.Name = "Website_Label";
-            this.Website_Label.Size = new System.Drawing.Size(93, 13);
+            this.Website_Label.Size = new System.Drawing.Size(99, 13);
             this.Website_Label.TabIndex = 21;
-            this.Website_Label.Text = "Personal Website:";
+            this.Website_Label.Text = "Strona internetowa:";
             // 
             // Website_Box
             // 
@@ -468,9 +477,9 @@ namespace CV_generator
             this.Email_Label.AutoSize = true;
             this.Email_Label.Location = new System.Drawing.Point(6, 216);
             this.Email_Label.Name = "Email_Label";
-            this.Email_Label.Size = new System.Drawing.Size(78, 13);
+            this.Email_Label.Size = new System.Drawing.Size(67, 13);
             this.Email_Label.TabIndex = 13;
-            this.Email_Label.Text = "E-mail address:";
+            this.Email_Label.Text = "Adres e-mail:";
             // 
             // Email_Box
             // 
@@ -484,9 +493,9 @@ namespace CV_generator
             this.Telephone_Label.AutoSize = true;
             this.Telephone_Label.Location = new System.Drawing.Point(6, 189);
             this.Telephone_Label.Name = "Telephone_Label";
-            this.Telephone_Label.Size = new System.Drawing.Size(99, 13);
+            this.Telephone_Label.Size = new System.Drawing.Size(82, 13);
             this.Telephone_Label.TabIndex = 11;
-            this.Telephone_Label.Text = "Telephone number:";
+            this.Telephone_Label.Text = "Numer telefonu:";
             // 
             // Telephone_Box
             // 
@@ -500,18 +509,18 @@ namespace CV_generator
             this.City_Label.AutoSize = true;
             this.City_Label.Location = new System.Drawing.Point(6, 162);
             this.City_Label.Name = "City_Label";
-            this.City_Label.Size = new System.Drawing.Size(30, 13);
+            this.City_Label.Size = new System.Drawing.Size(44, 13);
             this.City_Label.TabIndex = 9;
-            this.City_Label.Text = "City: ";
+            this.City_Label.Text = "Miasto: ";
             // 
             // Address_Label
             // 
             this.Address_Label.AutoSize = true;
             this.Address_Label.Location = new System.Drawing.Point(6, 135);
             this.Address_Label.Name = "Address_Label";
-            this.Address_Label.Size = new System.Drawing.Size(51, 13);
+            this.Address_Label.Size = new System.Drawing.Size(37, 13);
             this.Address_Label.TabIndex = 8;
-            this.Address_Label.Text = "Address: ";
+            this.Address_Label.Text = "Ulica: ";
             // 
             // City_Box
             // 
@@ -532,9 +541,9 @@ namespace CV_generator
             this.Surname_Label.AutoSize = true;
             this.Surname_Label.Location = new System.Drawing.Point(6, 108);
             this.Surname_Label.Name = "Surname_Label";
-            this.Surname_Label.Size = new System.Drawing.Size(55, 13);
+            this.Surname_Label.Size = new System.Drawing.Size(59, 13);
             this.Surname_Label.TabIndex = 5;
-            this.Surname_Label.Text = "Surname: ";
+            this.Surname_Label.Text = "Nazwisko: ";
             // 
             // Surname_Box
             // 
@@ -555,9 +564,9 @@ namespace CV_generator
             this.Second_Name_Label.AutoSize = true;
             this.Second_Name_Label.Location = new System.Drawing.Point(6, 81);
             this.Second_Name_Label.Name = "Second_Name_Label";
-            this.Second_Name_Label.Size = new System.Drawing.Size(81, 13);
+            this.Second_Name_Label.Size = new System.Drawing.Size(65, 13);
             this.Second_Name_Label.TabIndex = 2;
-            this.Second_Name_Label.Text = "Second Name: ";
+            this.Second_Name_Label.Text = "Drugie imię: ";
             // 
             // Name_Box
             // 
@@ -571,9 +580,9 @@ namespace CV_generator
             this.Name_Label.AutoSize = true;
             this.Name_Label.Location = new System.Drawing.Point(6, 54);
             this.Name_Label.Name = "Name_Label";
-            this.Name_Label.Size = new System.Drawing.Size(41, 13);
+            this.Name_Label.Size = new System.Drawing.Size(32, 13);
             this.Name_Label.TabIndex = 0;
-            this.Name_Label.Text = "Name: ";
+            this.Name_Label.Text = "Imię: ";
             // 
             // Education_Tab
             // 
@@ -585,7 +594,7 @@ namespace CV_generator
             this.Education_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Education_Tab.Size = new System.Drawing.Size(977, 624);
             this.Education_Tab.TabIndex = 1;
-            this.Education_Tab.Text = "Education";
+            this.Education_Tab.Text = "Edukacja";
             // 
             // Edu_Data
             // 
@@ -604,43 +613,13 @@ namespace CV_generator
             this.Edu_Data.Size = new System.Drawing.Size(965, 561);
             this.Edu_Data.TabIndex = 2;
             // 
-            // EduFrom
-            // 
-            this.EduFrom.HeaderText = "From";
-            this.EduFrom.Name = "EduFrom";
-            this.EduFrom.Width = 55;
-            // 
-            // EduTo
-            // 
-            this.EduTo.HeaderText = "To";
-            this.EduTo.Name = "EduTo";
-            this.EduTo.Width = 45;
-            // 
-            // EduSchool
-            // 
-            this.EduSchool.HeaderText = "School";
-            this.EduSchool.Name = "EduSchool";
-            this.EduSchool.Width = 65;
-            // 
-            // EduDegree
-            // 
-            this.EduDegree.HeaderText = "Degree";
-            this.EduDegree.Name = "EduDegree";
-            this.EduDegree.Width = 67;
-            // 
-            // EduField
-            // 
-            this.EduField.HeaderText = "Field of study";
-            this.EduField.Name = "EduField";
-            this.EduField.Width = 94;
-            // 
             // EducationAdd_Button
             // 
             this.EducationAdd_Button.Location = new System.Drawing.Point(6, 31);
             this.EducationAdd_Button.Name = "EducationAdd_Button";
             this.EducationAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.EducationAdd_Button.TabIndex = 1;
-            this.EducationAdd_Button.Text = "Add...";
+            this.EducationAdd_Button.Text = "Dodaj...";
             this.EducationAdd_Button.UseVisualStyleBackColor = true;
             this.EducationAdd_Button.Click += new System.EventHandler(this.EducationAdd_Button_Click);
             // 
@@ -653,7 +632,7 @@ namespace CV_generator
             this.Experience_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Experience_Tab.Size = new System.Drawing.Size(977, 624);
             this.Experience_Tab.TabIndex = 2;
-            this.Experience_Tab.Text = "Experience";
+            this.Experience_Tab.Text = "Doświadczenie";
             this.Experience_Tab.UseVisualStyleBackColor = true;
             // 
             // ExperienceAdd_Button
@@ -662,7 +641,7 @@ namespace CV_generator
             this.ExperienceAdd_Button.Name = "ExperienceAdd_Button";
             this.ExperienceAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.ExperienceAdd_Button.TabIndex = 4;
-            this.ExperienceAdd_Button.Text = "Add...";
+            this.ExperienceAdd_Button.Text = "Dodaj...";
             this.ExperienceAdd_Button.UseVisualStyleBackColor = true;
             this.ExperienceAdd_Button.Click += new System.EventHandler(this.ExperienceAdd_Button_Click);
             // 
@@ -683,36 +662,6 @@ namespace CV_generator
             this.Exp_Data.Size = new System.Drawing.Size(965, 561);
             this.Exp_Data.TabIndex = 3;
             // 
-            // ExpFrom
-            // 
-            this.ExpFrom.HeaderText = "From";
-            this.ExpFrom.Name = "ExpFrom";
-            this.ExpFrom.Width = 55;
-            // 
-            // ExpTo
-            // 
-            this.ExpTo.HeaderText = "To";
-            this.ExpTo.Name = "ExpTo";
-            this.ExpTo.Width = 45;
-            // 
-            // ExpCompany
-            // 
-            this.ExpCompany.HeaderText = "Company";
-            this.ExpCompany.Name = "ExpCompany";
-            this.ExpCompany.Width = 76;
-            // 
-            // ExpPosition
-            // 
-            this.ExpPosition.HeaderText = "Position";
-            this.ExpPosition.Name = "ExpPosition";
-            this.ExpPosition.Width = 69;
-            // 
-            // ExpAdditional
-            // 
-            this.ExpAdditional.HeaderText = "Additional Info";
-            this.ExpAdditional.Name = "ExpAdditional";
-            this.ExpAdditional.Width = 99;
-            // 
             // Skills_Tab
             // 
             this.Skills_Tab.Controls.Add(this.SkillsAdd_Button);
@@ -722,7 +671,7 @@ namespace CV_generator
             this.Skills_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Skills_Tab.Size = new System.Drawing.Size(977, 624);
             this.Skills_Tab.TabIndex = 3;
-            this.Skills_Tab.Text = "Skills";
+            this.Skills_Tab.Text = "Umiejętności";
             this.Skills_Tab.UseVisualStyleBackColor = true;
             // 
             // SkillsAdd_Button
@@ -731,7 +680,7 @@ namespace CV_generator
             this.SkillsAdd_Button.Name = "SkillsAdd_Button";
             this.SkillsAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.SkillsAdd_Button.TabIndex = 6;
-            this.SkillsAdd_Button.Text = "Add...";
+            this.SkillsAdd_Button.Text = "Dodaj...";
             this.SkillsAdd_Button.UseVisualStyleBackColor = true;
             this.SkillsAdd_Button.Click += new System.EventHandler(this.SkillsAdd_Button_Click);
             // 
@@ -751,30 +700,6 @@ namespace CV_generator
             this.Skills_Data.Size = new System.Drawing.Size(965, 561);
             this.Skills_Data.TabIndex = 5;
             // 
-            // SkillsSkill
-            // 
-            this.SkillsSkill.HeaderText = "Skill";
-            this.SkillsSkill.Name = "SkillsSkill";
-            this.SkillsSkill.Width = 51;
-            // 
-            // SkillKnowledge
-            // 
-            this.SkillKnowledge.HeaderText = "Knowledge";
-            this.SkillKnowledge.Name = "SkillKnowledge";
-            this.SkillKnowledge.Width = 85;
-            // 
-            // SkillAdditionalInfo
-            // 
-            this.SkillAdditionalInfo.HeaderText = "Additional Info";
-            this.SkillAdditionalInfo.Name = "SkillAdditionalInfo";
-            this.SkillAdditionalInfo.Width = 99;
-            // 
-            // SkillsShow
-            // 
-            this.SkillsShow.HeaderText = "Show";
-            this.SkillsShow.Name = "SkillsShow";
-            this.SkillsShow.Width = 59;
-            // 
             // Courses_Tab
             // 
             this.Courses_Tab.Controls.Add(this.CoursesAdd_Button);
@@ -784,7 +709,7 @@ namespace CV_generator
             this.Courses_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Courses_Tab.Size = new System.Drawing.Size(977, 624);
             this.Courses_Tab.TabIndex = 4;
-            this.Courses_Tab.Text = "Courses";
+            this.Courses_Tab.Text = "Kursy";
             this.Courses_Tab.UseVisualStyleBackColor = true;
             // 
             // CoursesAdd_Button
@@ -793,7 +718,7 @@ namespace CV_generator
             this.CoursesAdd_Button.Name = "CoursesAdd_Button";
             this.CoursesAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.CoursesAdd_Button.TabIndex = 6;
-            this.CoursesAdd_Button.Text = "Add...";
+            this.CoursesAdd_Button.Text = "Dodaj...";
             this.CoursesAdd_Button.UseVisualStyleBackColor = true;
             this.CoursesAdd_Button.Click += new System.EventHandler(this.CoursesAdd_Button_Click);
             // 
@@ -814,36 +739,6 @@ namespace CV_generator
             this.Courses_Data.Size = new System.Drawing.Size(965, 561);
             this.Courses_Data.TabIndex = 5;
             // 
-            // CoursesFrom
-            // 
-            this.CoursesFrom.HeaderText = "From";
-            this.CoursesFrom.Name = "CoursesFrom";
-            this.CoursesFrom.Width = 55;
-            // 
-            // CoursesTo
-            // 
-            this.CoursesTo.HeaderText = "To";
-            this.CoursesTo.Name = "CoursesTo";
-            this.CoursesTo.Width = 45;
-            // 
-            // CoursesCourse
-            // 
-            this.CoursesCourse.HeaderText = "Course";
-            this.CoursesCourse.Name = "CoursesCourse";
-            this.CoursesCourse.Width = 65;
-            // 
-            // CoursesAdditionalInfo
-            // 
-            this.CoursesAdditionalInfo.HeaderText = "Additional Info";
-            this.CoursesAdditionalInfo.Name = "CoursesAdditionalInfo";
-            this.CoursesAdditionalInfo.Width = 99;
-            // 
-            // CoursesShow
-            // 
-            this.CoursesShow.HeaderText = "Show";
-            this.CoursesShow.Name = "CoursesShow";
-            this.CoursesShow.Width = 59;
-            // 
             // Projects_Tab
             // 
             this.Projects_Tab.Controls.Add(this.ProjectsAdd_Button);
@@ -853,7 +748,7 @@ namespace CV_generator
             this.Projects_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Projects_Tab.Size = new System.Drawing.Size(977, 624);
             this.Projects_Tab.TabIndex = 5;
-            this.Projects_Tab.Text = "Projects";
+            this.Projects_Tab.Text = "Projekty";
             this.Projects_Tab.UseVisualStyleBackColor = true;
             // 
             // ProjectsAdd_Button
@@ -862,7 +757,7 @@ namespace CV_generator
             this.ProjectsAdd_Button.Name = "ProjectsAdd_Button";
             this.ProjectsAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.ProjectsAdd_Button.TabIndex = 6;
-            this.ProjectsAdd_Button.Text = "Add...";
+            this.ProjectsAdd_Button.Text = "Dodaj...";
             this.ProjectsAdd_Button.UseVisualStyleBackColor = true;
             this.ProjectsAdd_Button.Click += new System.EventHandler(this.ProjectsAdd_Button_Click);
             // 
@@ -881,24 +776,6 @@ namespace CV_generator
             this.Projects_Data.Size = new System.Drawing.Size(965, 561);
             this.Projects_Data.TabIndex = 5;
             // 
-            // ProjectsProject
-            // 
-            this.ProjectsProject.HeaderText = "Project";
-            this.ProjectsProject.Name = "ProjectsProject";
-            this.ProjectsProject.Width = 65;
-            // 
-            // ProjectsAdditionalInfo
-            // 
-            this.ProjectsAdditionalInfo.HeaderText = "Additional Info";
-            this.ProjectsAdditionalInfo.Name = "ProjectsAdditionalInfo";
-            this.ProjectsAdditionalInfo.Width = 99;
-            // 
-            // ProjectsShow
-            // 
-            this.ProjectsShow.HeaderText = "Show";
-            this.ProjectsShow.Name = "ProjectsShow";
-            this.ProjectsShow.Width = 59;
-            // 
             // Languages_Tab
             // 
             this.Languages_Tab.Controls.Add(this.LanguagesAdd_Button);
@@ -908,7 +785,7 @@ namespace CV_generator
             this.Languages_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Languages_Tab.Size = new System.Drawing.Size(977, 624);
             this.Languages_Tab.TabIndex = 6;
-            this.Languages_Tab.Text = "Languages";
+            this.Languages_Tab.Text = "Języki";
             this.Languages_Tab.UseVisualStyleBackColor = true;
             // 
             // LanguagesAdd_Button
@@ -917,7 +794,7 @@ namespace CV_generator
             this.LanguagesAdd_Button.Name = "LanguagesAdd_Button";
             this.LanguagesAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.LanguagesAdd_Button.TabIndex = 6;
-            this.LanguagesAdd_Button.Text = "Add...";
+            this.LanguagesAdd_Button.Text = "Dodaj...";
             this.LanguagesAdd_Button.UseVisualStyleBackColor = true;
             this.LanguagesAdd_Button.Click += new System.EventHandler(this.LanguagesAdd_Button_Click);
             // 
@@ -935,18 +812,6 @@ namespace CV_generator
             this.Languages_Data.Size = new System.Drawing.Size(965, 561);
             this.Languages_Data.TabIndex = 5;
             // 
-            // LanguagesLanguage
-            // 
-            this.LanguagesLanguage.HeaderText = "Language";
-            this.LanguagesLanguage.Name = "LanguagesLanguage";
-            this.LanguagesLanguage.Width = 80;
-            // 
-            // LanguagesKnowledge
-            // 
-            this.LanguagesKnowledge.HeaderText = "Knowledge";
-            this.LanguagesKnowledge.Name = "LanguagesKnowledge";
-            this.LanguagesKnowledge.Width = 85;
-            // 
             // Additional_Info_Tab
             // 
             this.Additional_Info_Tab.Controls.Add(this.AdditionalInfoAdd_Button);
@@ -958,7 +823,7 @@ namespace CV_generator
             this.Additional_Info_Tab.Padding = new System.Windows.Forms.Padding(3);
             this.Additional_Info_Tab.Size = new System.Drawing.Size(977, 624);
             this.Additional_Info_Tab.TabIndex = 7;
-            this.Additional_Info_Tab.Text = "Additional Info";
+            this.Additional_Info_Tab.Text = "Dodatkowe";
             this.Additional_Info_Tab.UseVisualStyleBackColor = true;
             // 
             // AdditionalInfoAdd_Button
@@ -967,7 +832,7 @@ namespace CV_generator
             this.AdditionalInfoAdd_Button.Name = "AdditionalInfoAdd_Button";
             this.AdditionalInfoAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.AdditionalInfoAdd_Button.TabIndex = 10;
-            this.AdditionalInfoAdd_Button.Text = "Add...";
+            this.AdditionalInfoAdd_Button.Text = "Dodaj...";
             this.AdditionalInfoAdd_Button.UseVisualStyleBackColor = true;
             this.AdditionalInfoAdd_Button.Click += new System.EventHandler(this.AdditionalInfoAdd_Button_Click);
             // 
@@ -985,25 +850,13 @@ namespace CV_generator
             this.AdditionalInfo_Data.Size = new System.Drawing.Size(485, 561);
             this.AdditionalInfo_Data.TabIndex = 9;
             // 
-            // AdditionalInfoAdditional
-            // 
-            this.AdditionalInfoAdditional.HeaderText = "Additional Info";
-            this.AdditionalInfoAdditional.Name = "AdditionalInfoAdditional";
-            this.AdditionalInfoAdditional.Width = 99;
-            // 
-            // AdditionalInfoShow
-            // 
-            this.AdditionalInfoShow.HeaderText = "Show";
-            this.AdditionalInfoShow.Name = "AdditionalInfoShow";
-            this.AdditionalInfoShow.Width = 59;
-            // 
             // InterestsAdd_Button
             // 
             this.InterestsAdd_Button.Location = new System.Drawing.Point(6, 31);
             this.InterestsAdd_Button.Name = "InterestsAdd_Button";
             this.InterestsAdd_Button.Size = new System.Drawing.Size(75, 23);
             this.InterestsAdd_Button.TabIndex = 8;
-            this.InterestsAdd_Button.Text = "Add...";
+            this.InterestsAdd_Button.Text = "Dodaj...";
             this.InterestsAdd_Button.UseVisualStyleBackColor = true;
             this.InterestsAdd_Button.Click += new System.EventHandler(this.InterestsAdd_Button_Click);
             // 
@@ -1020,18 +873,6 @@ namespace CV_generator
             this.Interests_Data.Name = "Interests_Data";
             this.Interests_Data.Size = new System.Drawing.Size(485, 561);
             this.Interests_Data.TabIndex = 7;
-            // 
-            // AdditionalInfoInterests
-            // 
-            this.AdditionalInfoInterests.HeaderText = "Interests";
-            this.AdditionalInfoInterests.Name = "AdditionalInfoInterests";
-            this.AdditionalInfoInterests.Width = 72;
-            // 
-            // AdditionalInfoInterestShow
-            // 
-            this.AdditionalInfoInterestShow.HeaderText = "Show";
-            this.AdditionalInfoInterestShow.Name = "AdditionalInfoInterestShow";
-            this.AdditionalInfoInterestShow.Width = 59;
             // 
             // Footer_Tab
             // 
@@ -1056,20 +897,173 @@ namespace CV_generator
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // generateToolStripMenuItem
+            // EduFrom
             // 
-            this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cleanCVToolStripMenuItem});
-            this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
-            this.generateToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.generateToolStripMenuItem.Text = "Generate";
+            this.EduFrom.HeaderText = "Od";
+            this.EduFrom.Name = "EduFrom";
+            this.EduFrom.Width = 46;
             // 
-            // cleanCVToolStripMenuItem
+            // EduTo
             // 
-            this.cleanCVToolStripMenuItem.Name = "cleanCVToolStripMenuItem";
-            this.cleanCVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cleanCVToolStripMenuItem.Text = "Clean CV";
-            this.cleanCVToolStripMenuItem.Click += new System.EventHandler(this.cleanCVToolStripMenuItem_Click);
+            this.EduTo.HeaderText = "Do";
+            this.EduTo.Name = "EduTo";
+            this.EduTo.Width = 46;
+            // 
+            // EduSchool
+            // 
+            this.EduSchool.HeaderText = "Szkoła";
+            this.EduSchool.Name = "EduSchool";
+            this.EduSchool.Width = 66;
+            // 
+            // EduDegree
+            // 
+            this.EduDegree.HeaderText = "Stopień";
+            this.EduDegree.Name = "EduDegree";
+            this.EduDegree.Width = 68;
+            // 
+            // EduField
+            // 
+            this.EduField.HeaderText = "Kierunek";
+            this.EduField.Name = "EduField";
+            this.EduField.Width = 74;
+            // 
+            // ExpFrom
+            // 
+            this.ExpFrom.HeaderText = "Od";
+            this.ExpFrom.Name = "ExpFrom";
+            this.ExpFrom.Width = 46;
+            // 
+            // ExpTo
+            // 
+            this.ExpTo.HeaderText = "Do";
+            this.ExpTo.Name = "ExpTo";
+            this.ExpTo.Width = 46;
+            // 
+            // ExpCompany
+            // 
+            this.ExpCompany.HeaderText = "Przedsiębiorstwo";
+            this.ExpCompany.Name = "ExpCompany";
+            this.ExpCompany.Width = 111;
+            // 
+            // ExpPosition
+            // 
+            this.ExpPosition.HeaderText = "Stanowisko";
+            this.ExpPosition.Name = "ExpPosition";
+            this.ExpPosition.Width = 87;
+            // 
+            // ExpAdditional
+            // 
+            this.ExpAdditional.HeaderText = "Dodatkowe informacje";
+            this.ExpAdditional.Name = "ExpAdditional";
+            this.ExpAdditional.Width = 126;
+            // 
+            // SkillsSkill
+            // 
+            this.SkillsSkill.HeaderText = "Umiejętność";
+            this.SkillsSkill.Name = "SkillsSkill";
+            this.SkillsSkill.Width = 90;
+            // 
+            // SkillKnowledge
+            // 
+            this.SkillKnowledge.HeaderText = "Znajomość";
+            this.SkillKnowledge.Name = "SkillKnowledge";
+            this.SkillKnowledge.Width = 84;
+            // 
+            // SkillAdditionalInfo
+            // 
+            this.SkillAdditionalInfo.HeaderText = "Dodatkowe informacje";
+            this.SkillAdditionalInfo.Name = "SkillAdditionalInfo";
+            this.SkillAdditionalInfo.Width = 126;
+            // 
+            // SkillsShow
+            // 
+            this.SkillsShow.HeaderText = "Pokaż";
+            this.SkillsShow.Name = "SkillsShow";
+            this.SkillsShow.Width = 62;
+            // 
+            // CoursesFrom
+            // 
+            this.CoursesFrom.HeaderText = "Od";
+            this.CoursesFrom.Name = "CoursesFrom";
+            this.CoursesFrom.Width = 46;
+            // 
+            // CoursesTo
+            // 
+            this.CoursesTo.HeaderText = "Do";
+            this.CoursesTo.Name = "CoursesTo";
+            this.CoursesTo.Width = 46;
+            // 
+            // CoursesCourse
+            // 
+            this.CoursesCourse.HeaderText = "Kurs";
+            this.CoursesCourse.Name = "CoursesCourse";
+            this.CoursesCourse.Width = 53;
+            // 
+            // CoursesAdditionalInfo
+            // 
+            this.CoursesAdditionalInfo.HeaderText = "Dodatkowe informacje";
+            this.CoursesAdditionalInfo.Name = "CoursesAdditionalInfo";
+            this.CoursesAdditionalInfo.Width = 126;
+            // 
+            // CoursesShow
+            // 
+            this.CoursesShow.HeaderText = "Pokaż";
+            this.CoursesShow.Name = "CoursesShow";
+            this.CoursesShow.Width = 62;
+            // 
+            // ProjectsProject
+            // 
+            this.ProjectsProject.HeaderText = "Projekt";
+            this.ProjectsProject.Name = "ProjectsProject";
+            this.ProjectsProject.Width = 65;
+            // 
+            // ProjectsAdditionalInfo
+            // 
+            this.ProjectsAdditionalInfo.HeaderText = "Dodatkowe informacje";
+            this.ProjectsAdditionalInfo.Name = "ProjectsAdditionalInfo";
+            this.ProjectsAdditionalInfo.Width = 126;
+            // 
+            // ProjectsShow
+            // 
+            this.ProjectsShow.HeaderText = "Pokaż";
+            this.ProjectsShow.Name = "ProjectsShow";
+            this.ProjectsShow.Width = 62;
+            // 
+            // LanguagesLanguage
+            // 
+            this.LanguagesLanguage.HeaderText = "Język";
+            this.LanguagesLanguage.Name = "LanguagesLanguage";
+            this.LanguagesLanguage.Width = 59;
+            // 
+            // LanguagesKnowledge
+            // 
+            this.LanguagesKnowledge.HeaderText = "Znajomość";
+            this.LanguagesKnowledge.Name = "LanguagesKnowledge";
+            this.LanguagesKnowledge.Width = 84;
+            // 
+            // AdditionalInfoInterests
+            // 
+            this.AdditionalInfoInterests.HeaderText = "Zainteresowania";
+            this.AdditionalInfoInterests.Name = "AdditionalInfoInterests";
+            this.AdditionalInfoInterests.Width = 110;
+            // 
+            // AdditionalInfoInterestShow
+            // 
+            this.AdditionalInfoInterestShow.HeaderText = "Pokaż";
+            this.AdditionalInfoInterestShow.Name = "AdditionalInfoInterestShow";
+            this.AdditionalInfoInterestShow.Width = 62;
+            // 
+            // AdditionalInfoAdditional
+            // 
+            this.AdditionalInfoAdditional.HeaderText = "Dodatkowe informacje";
+            this.AdditionalInfoAdditional.Name = "AdditionalInfoAdditional";
+            this.AdditionalInfoAdditional.Width = 126;
+            // 
+            // AdditionalInfoShow
+            // 
+            this.AdditionalInfoShow.HeaderText = "Pokaż";
+            this.AdditionalInfoShow.Name = "AdditionalInfoShow";
+            this.AdditionalInfoShow.Width = 62;
             // 
             // CV_Generator_Form
             // 
@@ -1113,7 +1107,6 @@ namespace CV_generator
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
@@ -1161,18 +1154,8 @@ namespace CV_generator
         private System.Windows.Forms.CheckBox Second_Name_Check;
         private System.Windows.Forms.Button EducationAdd_Button;
         private System.Windows.Forms.DataGridView Edu_Data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EduFrom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EduTo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EduSchool;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EduDegree;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EduField;
         private System.Windows.Forms.Button ExperienceAdd_Button;
         private System.Windows.Forms.DataGridView Exp_Data;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpFrom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpTo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpCompany;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpPosition;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpAdditional;
         private System.Windows.Forms.Button SkillsAdd_Button;
         private System.Windows.Forms.DataGridView Skills_Data;
         private System.Windows.Forms.Button CoursesAdd_Button;
@@ -1181,6 +1164,26 @@ namespace CV_generator
         private System.Windows.Forms.DataGridView Projects_Data;
         private System.Windows.Forms.Button LanguagesAdd_Button;
         private System.Windows.Forms.DataGridView Languages_Data;
+        private System.Windows.Forms.Button InterestsAdd_Button;
+        private System.Windows.Forms.DataGridView Interests_Data;
+        private System.Windows.Forms.Button AdditionalInfoAdd_Button;
+        private System.Windows.Forms.DataGridView AdditionalInfo_Data;
+        private System.Windows.Forms.TabPage Footer_Tab;
+        private System.Windows.Forms.RichTextBox Footer_RichBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem generateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cleanCVToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EduFrom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EduTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EduSchool;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EduDegree;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EduField;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpFrom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpTo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpCompany;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpPosition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpAdditional;
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillsSkill;
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillKnowledge;
         private System.Windows.Forms.DataGridViewTextBoxColumn SkillAdditionalInfo;
@@ -1195,20 +1198,10 @@ namespace CV_generator
         private System.Windows.Forms.DataGridViewTextBoxColumn ProjectsShow;
         private System.Windows.Forms.DataGridViewTextBoxColumn LanguagesLanguage;
         private System.Windows.Forms.DataGridViewTextBoxColumn LanguagesKnowledge;
-        private System.Windows.Forms.Button InterestsAdd_Button;
-        private System.Windows.Forms.DataGridView Interests_Data;
-        private System.Windows.Forms.Button AdditionalInfoAdd_Button;
-        private System.Windows.Forms.DataGridView AdditionalInfo_Data;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoAdditional;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoShow;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterests;
         private System.Windows.Forms.DataGridViewTextBoxColumn AdditionalInfoInterestShow;
-        private System.Windows.Forms.TabPage Footer_Tab;
-        private System.Windows.Forms.RichTextBox Footer_RichBox;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ToolStripMenuItem generateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cleanCVToolStripMenuItem;
     }
 }
 

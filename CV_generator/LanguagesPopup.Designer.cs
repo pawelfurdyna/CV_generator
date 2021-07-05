@@ -56,18 +56,18 @@ namespace CV_generator
             this.Knowledge_Label.AutoSize = true;
             this.Knowledge_Label.Location = new System.Drawing.Point(12, 34);
             this.Knowledge_Label.Name = "Knowledge_Label";
-            this.Knowledge_Label.Size = new System.Drawing.Size(63, 13);
+            this.Knowledge_Label.Size = new System.Drawing.Size(62, 13);
             this.Knowledge_Label.TabIndex = 17;
-            this.Knowledge_Label.Text = "Knowledge:";
+            this.Knowledge_Label.Text = "Znajomość:";
             // 
             // Language_Label
             // 
             this.Language_Label.AutoSize = true;
             this.Language_Label.Location = new System.Drawing.Point(12, 9);
             this.Language_Label.Name = "Language_Label";
-            this.Language_Label.Size = new System.Drawing.Size(58, 13);
+            this.Language_Label.Size = new System.Drawing.Size(37, 13);
             this.Language_Label.TabIndex = 16;
-            this.Language_Label.Text = "Language:";
+            this.Language_Label.Text = "Język:";
             // 
             // Cancel_Button
             // 
@@ -76,7 +76,7 @@ namespace CV_generator
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_Button.TabIndex = 15;
-            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.Text = "Anuluj";
             this.Cancel_Button.UseVisualStyleBackColor = true;
             // 
             // OK_Button
@@ -101,7 +101,7 @@ namespace CV_generator
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.OK_Button);
             this.Name = "LanguagesPopup";
-            this.Text = "LanguagesPopup";
+            this.Text = "Języki";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -47,9 +47,9 @@ namespace CV_generator
             this.Interest_Label.AutoSize = true;
             this.Interest_Label.Location = new System.Drawing.Point(12, 9);
             this.Interest_Label.Name = "Interest_Label";
-            this.Interest_Label.Size = new System.Drawing.Size(45, 13);
+            this.Interest_Label.Size = new System.Drawing.Size(88, 13);
             this.Interest_Label.TabIndex = 27;
-            this.Interest_Label.Text = "Interest:";
+            this.Interest_Label.Text = "Zainteresowanie:";
             // 
             // Cancel_Button
             // 
@@ -58,7 +58,7 @@ namespace CV_generator
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_Button.TabIndex = 26;
-            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.Text = "Anuluj";
             this.Cancel_Button.UseVisualStyleBackColor = true;
             // 
             // OK_Button
@@ -71,7 +71,7 @@ namespace CV_generator
             this.OK_Button.Text = "OK";
             this.OK_Button.UseVisualStyleBackColor = true;
             // 
-            // Interests
+            // InterestsPopup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@ namespace CV_generator
             this.Controls.Add(this.Interest_Label);
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.OK_Button);
-            this.Name = "Interests";
-            this.Text = "Interests";
+            this.Name = "InterestsPopup";
+            this.Text = "Zainteresowania";
             this.ResumeLayout(false);
             this.PerformLayout();
 

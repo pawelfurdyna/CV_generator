@@ -13,6 +13,7 @@ namespace CV_generator
 {
     public partial class CV_Generator_Form : Form
     {
+        private const string V = "Tak";
         bool loadedFile = false;
         public CV_Generator_Form()
         {
@@ -74,7 +75,7 @@ namespace CV_generator
             if (dialogresult == DialogResult.OK)
             {
                 CheckBox Skillcheck = new CheckBox();
-                Skills_Data.Rows.Add(new object[] { skillspopup.Skill_Box.Text, skillspopup.Knowledge_Box.Text, skillspopup.AdditionalInfo_Box.Text, "Yes" });
+                Skills_Data.Rows.Add(new object[] { skillspopup.Skill_Box.Text, skillspopup.Knowledge_Box.Text, skillspopup.AdditionalInfo_Box.Text, V });
 
             }
             else if (dialogresult == DialogResult.Cancel)
@@ -92,7 +93,7 @@ namespace CV_generator
             if (dialogresult == DialogResult.OK)
             {
                 CheckBox Skillcheck = new CheckBox();
-                Courses_Data.Rows.Add(new object[] { coursespopup.From_Box.Text, coursespopup.To_Box.Text, coursespopup.Course_Box.Text, coursespopup.AdditionalInfo_Box.Text, "Yes" });
+                Courses_Data.Rows.Add(new object[] { coursespopup.From_Box.Text, coursespopup.To_Box.Text, coursespopup.Course_Box.Text, coursespopup.AdditionalInfo_Box.Text, V });
 
             }
             else if (dialogresult == DialogResult.Cancel)
@@ -110,7 +111,7 @@ namespace CV_generator
             if (dialogresult == DialogResult.OK)
             {
                 CheckBox Skillcheck = new CheckBox();
-                Projects_Data.Rows.Add(new object[] { projectspopup.Project_Box.Text, projectspopup.AdditionalInfo_Box.Text, "Yes" });
+                Projects_Data.Rows.Add(new object[] { projectspopup.Project_Box.Text, projectspopup.AdditionalInfo_Box.Text, V });
 
             }
             else if (dialogresult == DialogResult.Cancel)
@@ -146,7 +147,7 @@ namespace CV_generator
             if (dialogresult == DialogResult.OK)
             {
                 CheckBox Skillcheck = new CheckBox();
-                Interests_Data.Rows.Add(new object[] { interestspopup.Interest_Box.Text, "Yes" });
+                Interests_Data.Rows.Add(new object[] { interestspopup.Interest_Box.Text, V });
 
             }
             else if (dialogresult == DialogResult.Cancel)
@@ -164,7 +165,7 @@ namespace CV_generator
             if (dialogresult == DialogResult.OK)
             {
                 CheckBox Skillcheck = new CheckBox();
-                AdditionalInfo_Data.Rows.Add(new object[] { additionalpopup.AdditionalInfo_Box.Text, "Yes" });
+                AdditionalInfo_Data.Rows.Add(new object[] { additionalpopup.AdditionalInfo_Box.Text, V });
 
             }
             else if (dialogresult == DialogResult.Cancel)
@@ -381,7 +382,7 @@ namespace CV_generator
         {
             if (checkbox.Checked == true)
             {
-                return "Yes";
+                return V;
             }
             else
             {
@@ -391,7 +392,7 @@ namespace CV_generator
 
         public void stringToCheck (CheckBox checkbox, string check)
         {
-            if (check == "Yes")
+            if (check == V)
             {
                 checkbox.Checked = true;
             }
@@ -428,27 +429,38 @@ namespace CV_generator
                     sw.WriteLine("  </head>");
                     sw.WriteLine("  <style>");
                     sw.WriteLine("      body {");
-                    sw.WriteLine("          height: 1078px;");
-                    sw.WriteLine("          width: 762px");
+                    sw.WriteLine("          padding: 10px;");
+                    sw.WriteLine("          width: 210mm;");
+                    sw.WriteLine("      }");
+                    sw.WriteLine("      .rowtop {");
+                    sw.WriteLine("          display: flex;");
+                    sw.WriteLine("          border-bottom: 4px solid;");
+                    sw.WriteLine("      }");
+                    sw.WriteLine("      .row {");
+                    sw.WriteLine("          display: flex;");
+                    sw.WriteLine("          border-bottom: 1px solid;");
+                    sw.WriteLine("      }");
+                    sw.WriteLine("      .rowbottom {");
+                    sw.WriteLine("          display: flex;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .name {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          text-transform: uppercase;");
                     sw.WriteLine("          font-size: 24px;");
                     sw.WriteLine("          line-height: 10px;");
                     sw.WriteLine("          height: 15%;");
                     sw.WriteLine("          width: 70%;");
                     sw.WriteLine("          float: left;");
-                    sw.WriteLine("          border-bottom: 4px solid;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .general {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          line-height: 10px;");
                     sw.WriteLine("          height: 15%;");
                     sw.WriteLine("          width: 30%;");
                     sw.WriteLine("          float: right;");
-                    sw.WriteLine("          border-bottom: 4px solid;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .edu {");
-                    sw.WriteLine("          padding-top: 25%;");
+                    sw.WriteLine("          padding-top: 20px;");
                     sw.WriteLine("          border-bottom: 1px solid;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .edu table {");
@@ -474,23 +486,27 @@ namespace CV_generator
                     sw.WriteLine("          border-bottom: 1px solid;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .skills {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          padding-top: 1%;");
-                    sw.WriteLine("          border-bottom: 1px solid;");
                     sw.WriteLine("          width: 50%;");
                     sw.WriteLine("          float: left;");
+                    sw.WriteLine("          display: block;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .languages {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          padding-top: 1%;");
-                    sw.WriteLine("          border-bottom: 1px solid;");
                     sw.WriteLine("          width: 50%;");
                     sw.WriteLine("          float: right;");
+                    sw.WriteLine("          display: block;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .interests {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          padding-top: 1%;");
                     sw.WriteLine("          width: 50%;");
                     sw.WriteLine("          float: left;");
                     sw.WriteLine("      }");
                     sw.WriteLine("      .additional {");
+                    sw.WriteLine("          flex: 1;");
                     sw.WriteLine("          padding-top: 1%;");
                     sw.WriteLine("          width: 50%;");
                     sw.WriteLine("          float: right;");
@@ -500,6 +516,7 @@ namespace CV_generator
                     sw.WriteLine("      }");
                     sw.WriteLine("  </style>");
                     sw.WriteLine("  <body>");
+                    sw.WriteLine("      <div class=\"rowtop\">");
                     sw.WriteLine("      <div class=\"name\">");
                     sw.WriteLine("          <h1>" + Name_Box.Text + "</h1>");
                     sw.WriteLine("          <h1>" + Surname_Box.Text + "</h1>");
@@ -512,9 +529,142 @@ namespace CV_generator
                     if (Facebook_Box.Text != null && Facebook_Check.Checked == true) { sw.WriteLine("          <p>" + Facebook_Box.Text + "</p>"); }
                     if (LinkedIn_Box.Text != null && LinkedIn_Check.Checked == true) { sw.WriteLine("          <p>" + LinkedIn_Box.Text + "</p>"); }
                     if (GitHub_Box.Text != null && GitHub_Check.Checked == true) { sw.WriteLine("          <p>" + GitHub_Box.Text + "</p>"); }
-                    if (Website_Box.Text != null && Website_Check.Checked == true) { sw.WriteLine("          <p>Website: " + Website_Box.Text + "</p>"); }
+                    if (Website_Box.Text != null && Website_Check.Checked == true) { sw.WriteLine("          <p>Strona: " + Website_Box.Text + "</p>"); }
+                    sw.WriteLine("      </div>");
+                    sw.WriteLine("      </div>");
+                    if (readData(Edu_Data).Length > 0) {
+                        sw.WriteLine("      <div class=\"edu\">");
+                        sw.WriteLine("          <h2>Wykształcenie: </h2>");
+                        sw.WriteLine("          <table>");
+                        for (int i = 0; i < readData(Edu_Data).Length; i += 5)
+                        {
+                            sw.WriteLine("              <tr> ");
+                            sw.WriteLine("                  <td>" + readData(Edu_Data)[i] + " - " + readData(Edu_Data)[i + 1] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Edu_Data)[i + 2] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Edu_Data)[i + 3] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Edu_Data)[i + 4] + "</td>");
+                            sw.WriteLine("              </tr> ");
+                        }
+                        sw.WriteLine("          </table>");
+                        sw.WriteLine("      </div>");
+                    }
+
+                    if (readData(Exp_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"exp\">");
+                        sw.WriteLine("          <h2>Doświadczenie: </h2>");
+                        sw.WriteLine("          <table>");
+                        for (int i = 0; i < readData(Exp_Data).Length; i += 5)
+                        {
+                            sw.WriteLine("              <tr> ");
+                            sw.WriteLine("                  <td>" + readData(Exp_Data)[i] + " - " + readData(Exp_Data)[i + 1] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Exp_Data)[i + 2] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Exp_Data)[i + 3] + "</td>");
+                            sw.WriteLine("                  <td>" + readData(Exp_Data)[i + 4] + "</td>");
+                            sw.WriteLine("              </tr> ");
+                        }
+                        sw.WriteLine("          </table>");
+                        sw.WriteLine("      </div>");
+                    }
+
+                    if (readData(Projects_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"projects\">");
+                        sw.WriteLine("          <h3>Projekty: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(Projects_Data).Length; i += 3)
+                        {
+                            if(readData(Projects_Data)[i+2] == V)
+                            {
+                                sw.WriteLine("              <li><h4>" + readData(Projects_Data)[i] + "</h4><p>" + readData(Projects_Data)[i + 1] + "</p></li>");
+                            }
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
+
+                    if (readData(Courses_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"courses\">");
+                        sw.WriteLine("          <h3>Kursy: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(Courses_Data).Length; i += 5)
+                        {
+                            if (readData(Courses_Data)[i + 4] == V)
+                            {
+                                sw.WriteLine("              <li><h4>" + readData(Courses_Data)[i] + " - " + readData(Courses_Data)[i + 1] + " " + readData(Courses_Data)[i + 2] + "</h4><p>" + readData(Courses_Data)[i + 3] + "</p></li>");
+                            }
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
+                    sw.WriteLine("      <div class=\"row\">");
+                    if (readData(Skills_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"skills\">");
+                        sw.WriteLine("          <h3>Umiejętności: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(Skills_Data).Length; i += 4)
+                        {
+                            if (readData(Skills_Data)[i + 3] == V)
+                            {
+                                sw.WriteLine("              <li>" + readData(Skills_Data)[i] + "</li>");
+                            }
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
+
+                    if (readData(Languages_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"languages\">");
+                        sw.WriteLine("          <h3>Język: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(Languages_Data).Length; i += 2)
+                        {
+                            sw.WriteLine("              <li>" + readData(Languages_Data)[i] + ": " + readData(Languages_Data)[i + 1] + "</li>");
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
+                    sw.WriteLine("      </div>");
+                    sw.WriteLine("      <div class=\"rowbottom\">");
+                    if (readData(Interests_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"interests\">");
+                        sw.WriteLine("          <h3>Zainteresowania: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(Interests_Data).Length; i += 2)
+                        {
+                            if (readData(Interests_Data)[i + 1] == V)
+                            {
+                                sw.WriteLine("              <li>" + readData(Interests_Data)[i] + "</li>");
+                            }
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
+
+                    if (readData(AdditionalInfo_Data).Length > 0)
+                    {
+                        sw.WriteLine("      <div class=\"additional\">");
+                        sw.WriteLine("          <h3>Informacje dodatkowe: </h3>");
+                        sw.WriteLine("          <ul>");
+                        for (int i = 0; i < readData(AdditionalInfo_Data).Length; i += 2)
+                        {
+                            if (readData(AdditionalInfo_Data)[i + 1] == V)
+                            {
+                                sw.WriteLine("              <li>" + readData(AdditionalInfo_Data)[i] + "</li>");
+                            }
+                        }
+                        sw.WriteLine("          </ul>");
+                        sw.WriteLine("      </div>");
+                    }
                     sw.WriteLine("      </div>");
                     sw.WriteLine("  </body>");
+                    sw.WriteLine("  <footer>");
+                    sw.WriteLine("      <p>" + Footer_RichBox.Text + "</p>");
+                    sw.WriteLine("  </footer>");
                     sw.WriteLine("</html>");
 
                     sw.Close();

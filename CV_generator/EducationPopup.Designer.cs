@@ -61,7 +61,7 @@ namespace CV_generator
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_Button.TabIndex = 1;
-            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.Text = "Anuluj";
             this.Cancel_Button.UseVisualStyleBackColor = true;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
@@ -70,18 +70,18 @@ namespace CV_generator
             this.From_Label.AutoSize = true;
             this.From_Label.Location = new System.Drawing.Point(12, 9);
             this.From_Label.Name = "From_Label";
-            this.From_Label.Size = new System.Drawing.Size(33, 13);
+            this.From_Label.Size = new System.Drawing.Size(24, 13);
             this.From_Label.TabIndex = 2;
-            this.From_Label.Text = "From:";
+            this.From_Label.Text = "Od:";
             // 
             // To_Label
             // 
             this.To_Label.AutoSize = true;
             this.To_Label.Location = new System.Drawing.Point(12, 34);
             this.To_Label.Name = "To_Label";
-            this.To_Label.Size = new System.Drawing.Size(23, 13);
+            this.To_Label.Size = new System.Drawing.Size(24, 13);
             this.To_Label.TabIndex = 4;
-            this.To_Label.Text = "To:";
+            this.To_Label.Text = "Do:";
             // 
             // School_Box
             // 
@@ -109,27 +109,27 @@ namespace CV_generator
             this.School_Label.AutoSize = true;
             this.School_Label.Location = new System.Drawing.Point(12, 57);
             this.School_Label.Name = "School_Label";
-            this.School_Label.Size = new System.Drawing.Size(43, 13);
+            this.School_Label.Size = new System.Drawing.Size(44, 13);
             this.School_Label.TabIndex = 9;
-            this.School_Label.Text = "School:";
+            this.School_Label.Text = "Szkoła:";
             // 
             // Degree_Label
             // 
             this.Degree_Label.AutoSize = true;
             this.Degree_Label.Location = new System.Drawing.Point(12, 83);
             this.Degree_Label.Name = "Degree_Label";
-            this.Degree_Label.Size = new System.Drawing.Size(45, 13);
+            this.Degree_Label.Size = new System.Drawing.Size(46, 13);
             this.Degree_Label.TabIndex = 10;
-            this.Degree_Label.Text = "Degree:";
+            this.Degree_Label.Text = "Stopień:";
             // 
             // Field_Label
             // 
             this.Field_Label.AutoSize = true;
             this.Field_Label.Location = new System.Drawing.Point(12, 109);
             this.Field_Label.Name = "Field_Label";
-            this.Field_Label.Size = new System.Drawing.Size(72, 13);
+            this.Field_Label.Size = new System.Drawing.Size(52, 13);
             this.Field_Label.TabIndex = 11;
-            this.Field_Label.Text = "Field of study:";
+            this.Field_Label.Text = "Kierunek:";
             // 
             // From_Box
             // 
@@ -163,7 +163,7 @@ namespace CV_generator
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.OK_Button);
             this.Name = "EducationPopup";
-            this.Text = "EducationPopup";
+            this.Text = "Edukacja";
             this.ResumeLayout(false);
             this.PerformLayout();
 

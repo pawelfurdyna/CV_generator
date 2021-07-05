@@ -37,7 +37,7 @@ namespace CV_generator
             // 
             // AdditionalInfo_Box
             // 
-            this.AdditionalInfo_Box.Location = new System.Drawing.Point(103, 6);
+            this.AdditionalInfo_Box.Location = new System.Drawing.Point(138, 6);
             this.AdditionalInfo_Box.Name = "AdditionalInfo_Box";
             this.AdditionalInfo_Box.Size = new System.Drawing.Size(200, 20);
             this.AdditionalInfo_Box.TabIndex = 28;
@@ -47,24 +47,24 @@ namespace CV_generator
             this.AdditionalInfo_Label.AutoSize = true;
             this.AdditionalInfo_Label.Location = new System.Drawing.Point(12, 9);
             this.AdditionalInfo_Label.Name = "AdditionalInfo_Label";
-            this.AdditionalInfo_Label.Size = new System.Drawing.Size(77, 13);
+            this.AdditionalInfo_Label.Size = new System.Drawing.Size(116, 13);
             this.AdditionalInfo_Label.TabIndex = 27;
-            this.AdditionalInfo_Label.Text = "Additional Info:";
+            this.AdditionalInfo_Label.Text = "Dodatkowa informacja:";
             // 
             // Cancel_Button
             // 
             this.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel_Button.Location = new System.Drawing.Point(228, 32);
+            this.Cancel_Button.Location = new System.Drawing.Point(263, 32);
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_Button.TabIndex = 26;
-            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.Text = "Anuluj";
             this.Cancel_Button.UseVisualStyleBackColor = true;
             // 
             // OK_Button
             // 
             this.OK_Button.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.OK_Button.Location = new System.Drawing.Point(103, 32);
+            this.OK_Button.Location = new System.Drawing.Point(138, 32);
             this.OK_Button.Name = "OK_Button";
             this.OK_Button.Size = new System.Drawing.Size(75, 23);
             this.OK_Button.TabIndex = 25;
@@ -81,7 +81,7 @@ namespace CV_generator
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.OK_Button);
             this.Name = "AdditionalInfoPopup";
-            this.Text = "AdditionalInfopopup";
+            this.Text = "Dodatkowe";
             this.ResumeLayout(false);
             this.PerformLayout();
 

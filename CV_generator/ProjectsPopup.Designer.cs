@@ -39,14 +39,14 @@ namespace CV_generator
             // 
             // AdditionalInfo_Box
             // 
-            this.AdditionalInfo_Box.Location = new System.Drawing.Point(103, 31);
+            this.AdditionalInfo_Box.Location = new System.Drawing.Point(153, 31);
             this.AdditionalInfo_Box.Name = "AdditionalInfo_Box";
             this.AdditionalInfo_Box.Size = new System.Drawing.Size(200, 20);
             this.AdditionalInfo_Box.TabIndex = 25;
             // 
             // Project_Box
             // 
-            this.Project_Box.Location = new System.Drawing.Point(103, 6);
+            this.Project_Box.Location = new System.Drawing.Point(153, 6);
             this.Project_Box.Name = "Project_Box";
             this.Project_Box.Size = new System.Drawing.Size(200, 20);
             this.Project_Box.TabIndex = 24;
@@ -56,9 +56,9 @@ namespace CV_generator
             this.AdditionalInfo_Label.AutoSize = true;
             this.AdditionalInfo_Label.Location = new System.Drawing.Point(12, 34);
             this.AdditionalInfo_Label.Name = "AdditionalInfo_Label";
-            this.AdditionalInfo_Label.Size = new System.Drawing.Size(77, 13);
+            this.AdditionalInfo_Label.Size = new System.Drawing.Size(116, 13);
             this.AdditionalInfo_Label.TabIndex = 17;
-            this.AdditionalInfo_Label.Text = "Additional Info:";
+            this.AdditionalInfo_Label.Text = "Dodatkowe informacje:";
             // 
             // Project_Label
             // 
@@ -67,22 +67,22 @@ namespace CV_generator
             this.Project_Label.Name = "Project_Label";
             this.Project_Label.Size = new System.Drawing.Size(43, 13);
             this.Project_Label.TabIndex = 16;
-            this.Project_Label.Text = "Project:";
+            this.Project_Label.Text = "Projekt:";
             // 
             // Cancel_Button
             // 
             this.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel_Button.Location = new System.Drawing.Point(228, 57);
+            this.Cancel_Button.Location = new System.Drawing.Point(278, 57);
             this.Cancel_Button.Name = "Cancel_Button";
             this.Cancel_Button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_Button.TabIndex = 15;
-            this.Cancel_Button.Text = "Cancel";
+            this.Cancel_Button.Text = "Anuluj";
             this.Cancel_Button.UseVisualStyleBackColor = true;
             // 
             // OK_Button
             // 
             this.OK_Button.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.OK_Button.Location = new System.Drawing.Point(103, 57);
+            this.OK_Button.Location = new System.Drawing.Point(153, 57);
             this.OK_Button.Name = "OK_Button";
             this.OK_Button.Size = new System.Drawing.Size(75, 23);
             this.OK_Button.TabIndex = 14;
@@ -93,7 +93,7 @@ namespace CV_generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 100);
+            this.ClientSize = new System.Drawing.Size(365, 100);
             this.Controls.Add(this.AdditionalInfo_Box);
             this.Controls.Add(this.Project_Box);
             this.Controls.Add(this.AdditionalInfo_Label);
@@ -101,7 +101,7 @@ namespace CV_generator
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.OK_Button);
             this.Name = "ProjectsPopup";
-            this.Text = "ProjectsPopup";
+            this.Text = "Projekty";
             this.ResumeLayout(false);
             this.PerformLayout();
 
